@@ -50,6 +50,7 @@ a {
 	width: 400px;
 	height: 100px;
 	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
 }
 
 #card .description {
@@ -89,4 +90,26 @@ table.info td {
 	padding: 10px 0px;
 	background-color: #011f36;
 	border: 0px;
+}
+
+
+@media (max-width: 600px) {
+ 	body {
+		min-width: initial;
+	}
+
+	#card {
+		width: 100%;
+		left: initial;
+		right: initial;
+		margin: 0px;
+	}
+
+	#card .logo.large {
+		background-size: 200px;
+		background-position: right center;
+		left: initial;
+		right: 50px;
+		width: initial;
+	}
 }
